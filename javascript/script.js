@@ -31,6 +31,9 @@ function disBonjour() {
     console.log(querySelectorAll);
   }
   
+  var btn =document.getElementById("btnGenerer");
+
+
   function RemplaceLeTexte() {
   
     //Récupére le texte qui  est dans l'input 
@@ -48,3 +51,51 @@ function disBonjour() {
   //console.log(textInput);
   //let monParagraphe = document.querySelector("#leTexteARemplacer");
   //console.log(monParagraphe);
+
+
+  // btn.addEventListener('click', RemplaceLeTexte);//on ne met pas les parenthéses
+
+  function refresh(){
+    let textTitre = document.getElementById('titreWysiwyg').value;
+    console.log(textTitre);
+    document.querySelector("#titreWysiwygResultat").textContent= textTitre;
+
+
+    let textContent =document.getElementById('contentWysiwyg').value;
+    console.log(textContent);
+    document.querySelector("#contentWysiwygResultat").textContent=textContent;
+
+    let imgSRC =document.getElementById('imgWysiwyg').value;
+    console.log(imgSRC);
+    document.querySelector("#imgWysiwygResultat").src=imgSRC;
+  }
+
+  btn.addEventListener('click',refresh);
+
+  // var inputTitre =document.querySelector('#titreWysiwyg');
+  // console.log(inputTitre);
+  // inputTitre.addEventListener('keyup',refresh);
+  // inputTitre.addEventListener('change',refresh);
+  
+
+  // var imgSource =document.querySelector('#imgWysiwyg');
+  // console.log(imgSource);
+  // imgSource.addEventListener('keyup',refresh);
+  // imgSource.addEventListener('change',refresh);
+  
+
+  // var contenu =document.querySelector('#contentWysiwyg');
+  // console.log(contenu);
+  // contenu.addEventListener('keyup',refresh);
+  // contenu.addEventListener('change',refresh);
+
+
+  var mesInputWithEvent=document.querySelectorAll(".eventClass");
+
+  mesInputWithEvent.forEach(monInput =>{
+    //mon itérération
+    monInput.addEventListener("keyup",refresh)
+    monInput.addEventListener("change",refresh)
+  })
+  
+

@@ -1,0 +1,35 @@
+/*éliminés tous les styles par défault*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*modifier la valeur de référence de lélément racine html à 62.5% 1 rem vaut 10px */
+html{
+    font-size: 62.5%;/*1 rem =10px*/
+
+}
+
+/*les styles généraux*/
+body{
+    font-size:1.4rem;/* soit 14px*/
+    font-family:arial,sans-serif;
+
+}
+
+/*style de la balise .container avec flex*/
+
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    background-color:#1E2337;
+    color:#fff
+}
+.banniere-titre{
+    margin-bottom:1rem
+}

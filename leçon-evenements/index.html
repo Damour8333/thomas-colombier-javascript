@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modéle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <h1>Mon projet js</h1>
+  <input nom="monNom">
+  <button onclick="disBonjour()">Dis moi Bonjour</button>
+  <button onclick="utiliseLesSelecteurs()">utilise les selecteurs </button>
+  <div id="noeud">
+    <p><i class="maClasse">je suis en italique</i></p>
+  </div>
+  <div><b>je suis gras</b></div>
+
+  <fieldset>
+    <legend>Changement de texte</legend>
+    <input id="leTexteARecuperer" type="text" placeholder="écrire le texte">
+    <button onclick="RemplaceLeTexte()">Remplacer</button>
+    <p id="leTexteARemplacer">
+      Vous pouvez remplacer le texte ici via le bouton ci-dessous
+    </p>
+  </fieldset>
+
+
+
+
+
+
+
+  <fieldset style="margin-top:30px">
+    <legend>Mon wysiwing</legend>
+    <div>
+
+      <label>titre</label>
+      <input  class="eventClass" type="text" id="titreWysiwyg">
+    </div>
+
+    <div>
+
+      <label>Src image</label>
+      <input class="eventClass"  type="text" id="imgWysiwyg">
+    </div>
+    <div>
+
+      <label>Content</label>
+      <textarea class="eventClass"  type="text" id="contentWysiwyg"></textarea>
+    </div>
+
+
+    <div>
+      <button id="btnGenerer">Générer</button>
+    </div>
+  </fieldset>
+  <div id="resultatWyswyg">
+    <h2 id="titreWysiwygResultat">Titre du wysiwig</h2>
+    <img   id="imgWysiwygResultat">
+    <p id="contentWysiwygResultat">content resultat</p>
+  </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+<!--echo "# oh-mycode-sonia-Baibou" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Damour8333/oh-mycode-sonia-Baibou.git
+git push -u origin main-->

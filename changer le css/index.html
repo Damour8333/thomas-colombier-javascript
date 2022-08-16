@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> thomas colombier/site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+
+    <h1>WYSIWYF</h1>
+    <span>(what you see is what you get)</span>
+
+  </header>
+  <fieldset>
+    <legend>Mon wysiwing</legend>
+    <div class="field-container">
+
+      <label>titre</label>
+      <input class="eventClass" type="text" id="titreWysiwyg">
+
+
+      <label for="">Couleur du titre </label>
+      <input class="eventClass" type="text" id="colorTitleWysiwyg">
+
+
+      <label for="">taille du titre</label>
+      <input  class="eventClass" type="number" id="tailleTitleWysiwyg" value="21px">
+    </div>
+
+    <div class="field-container">
+
+      <label>Src image</label>
+      <input class="eventClass" type="text" id="imgWysiwyg">
+
+      <label>Largeur max</label>
+      <input value="300" class="eventClass" type="number" id="imgMaxWidth">
+    </div>
+    <div class="field-container">
+
+      <label>Content</label>
+      <textarea class="eventClass" type="text" id="contentWysiwyg"></textarea>
+    </div>
+
+
+    <div>
+      <button id="btnGenerer">Générer</button>
+    </div>
+  </fieldset>
+  <div id="resultatWyswyg">
+    <h2 id="titreWysiwygResultat">Titre du wysiwig</h2>
+    <img id="imgWysiwygResultat">
+    <p id="contentWysiwygResultat">content resultat</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
