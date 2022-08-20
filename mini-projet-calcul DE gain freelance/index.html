@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLanceMoney</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>FreeLance Money Calculator et atravers</h1>
+    </header>
+    <form class="formCalcul">
+
+        <div class=" sectionCalcul pricing">
+            <fieldset class="form-container">
+                <legend>Vos tarifs</legend>
+                <div>
+                    <label >TH</label>
+                    <input class="form-field" type="number" name="TauxHoraire" placeholder="ex 70">
+                </div>
+                <div>
+                    <label >TJM</label>
+                    <input class="form-field" type="number" name="TJM" placeholder="ex 490">
+                </div>
+                <div>
+                    <label >Extras</label>
+                    <input class="form-field" type="number" name="TauxHoraire" placeholder="ex 47">
+                </div>
+            </fieldset>
+        </div>
+        <div class="  sectionCalcul qte">
+            <fieldset class="form-container">
+                <legend>Vos  quantité</legend>
+                <div>
+                    <label >TH</label>
+                    <input class="form-field" type="number" name="QteTH" placeholder="ex 140">
+                </div>
+                <div>
+                    <label >TJM</label>
+                    <input class="form-field" type="number" name="QteJM" placeholder="ex 30">
+                </div>
+                <div>
+                    <label >Extras</label>
+                    <input class="form-field" type="number" name="Qteextras" placeholder="ex 7">
+                </div>
+            </fieldset>
+        </div>
+        <div class="  sectionCalcul charges">
+            <fieldset class="form-container">
+                <legend>Vos charges</legend>
+                <div class="form-field">
+                    <label >Charge</label>
+                    <input type="number" name="Charges" placeholder="ex 70">
+                </div>
+               
+            </fieldset>
+        </div>
+        <div class="  sectionCalcul validation">
+            <button class="calculer">calculer</button>
+        </div>
+        <div class="  sectionCalcul result">
+            
+            ici le resultat
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

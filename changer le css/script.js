@@ -35,18 +35,35 @@ function refresh() {
 
 
 }
+
+
+
+function onMOuseOver(){
+var tousLabels = document.querySelectorAll("input");
+tousLabels.forEach(monlabel =>{
+  monlabel.style.padding ='15px';
+});
+
+}
+function onMouseLeave(){
+var tousLabels = document.querySelectorAll("input");
+tousLabels.forEach(monlabel =>{
+  monlabel.style.padding ='inherit';  
+});
+}
+
 var btn = document.getElementById("btnGenerer");
 btn.addEventListener('click', refresh);
-
-
-
-
 var mesInputWithEvent = document.querySelectorAll(".eventClass");
 
 mesInputWithEvent.forEach(monInput => {
   //mon itérération
-  monInput.addEventListener("keyup", refresh)
-  monInput.addEventListener("change", refresh)
+  monInput.addEventListener("keyup", refresh);
+  monInput.addEventListener("change", refresh);
+
+  monInput.addEventListener("mouseover",onMOuseOver);
+  monInput.addEventListener("mouseleave",onMouseLeave);
 })
+
 
 
